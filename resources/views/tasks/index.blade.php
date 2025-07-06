@@ -4,13 +4,13 @@
     </x-slot:heading>
 
     @if(session('success'))
-        <p class="bg-green-500 text-white rounded-md px-5 py-3 mb-10">The task is created successfully</p>
+        <p class="bg-green-500 text-white rounded-md px-5 py-3 mb-10">{{ session('success') }}</p>
     @endif
 
     <ul>
         @foreach($tasks as $task)
             <li>
-                <strong>Title:</strong> {{ $task->task_title }} <br />
+                <a href="/tasks/{{ $task->id }}"><strong>Title:</strong> {{ $task->task_title }}</a> <br />
                 <strong>Description:</strong> {{ $task->task_description }}
             </li>
             &nbsp;
