@@ -20,6 +20,11 @@ class TestTaskController extends Controller
         return view('tasks.create');
     }
 
+    public function show(TestTask $task)
+    {
+        return view('tasks.show', ['task' => $task]);
+    }
+
     public function store()
     {
         // validate the data
@@ -38,10 +43,6 @@ class TestTaskController extends Controller
         return redirect('/tasks')->with('success', 'The task is created successfully');
     }
 
-    public function show(TestTask $task)
-    {
-        return view('tasks.show', ['task' => $task]);
-    }
 
     public function edit(TestTask $task)
     {

@@ -3,7 +3,7 @@
         Edit a task
     </x-slot:heading>
 
-    <form action="/tasks/{{$task->id}}/update" method="post">
+    <form action="/tasks/{{$task->id}}" method="POST">
         @method('PATCH')
         @csrf
         <div class="space-y-12">

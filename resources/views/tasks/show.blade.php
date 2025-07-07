@@ -2,6 +2,7 @@
     <x-slot:heading>
         Single task page
     </x-slot:heading>
+
     <div>
         <h3><strong>Title:</strong> {{ $task->task_title }}</h3>
         <p><strong>Description:</strong> {{ $task->task_description }}</p>
