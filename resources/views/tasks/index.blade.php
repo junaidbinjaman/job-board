@@ -3,6 +3,10 @@
         Task List
     </x-slot:heading>
 
+    @if(session('success'))
+        <p class="bg-green-500 text-white rounded-md px-5 py-3 mb-10">The task is created successfully</p>
+    @endif
+
     <ul>
         @foreach($tasks as $task)
             <li>
