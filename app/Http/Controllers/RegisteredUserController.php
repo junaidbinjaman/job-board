@@ -18,7 +18,7 @@ class RegisteredUserController extends Controller
     {
         // Validate the data
         $attributes = request()->validate([
-            'first_name' => ['min:3', 'required',],
+            'name' => ['min:3', 'required',],
             'last_name' => ['min:3', 'required'],
             'email' => ['required', 'max:54', 'email'],
             'password' => ['required', Password::min(6), 'confirmed'],

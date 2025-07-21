@@ -10,11 +10,11 @@
 
                 <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                     <x-form-field>
-                        <x-form-label title="first_name">First Name</x-form-label>
+                        <x-form-label title="name">First Name</x-form-label>
                         <div class="mt-2">
-                            <x-form-input name="first_name" id="first_name" required />
+                            <x-form-input name="name" id="name" required />
 
-                            <x-form-error name="first_name"></x-form-error>
+                            <x-form-error name="name"></x-form-error>
                         </div>
                     </x-form-field>
 
